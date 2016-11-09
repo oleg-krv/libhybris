@@ -221,6 +221,8 @@ AC_CONFIG_FILES([
 	include/Makefile
 	utils/Makefile
 	tests/Makefile
+	libmxmnetsdk/Makefile
+	libmxmnetsdk/libmxmnetsdk.pc
 ])
 
 AM_COND_IF([WANT_WAYLAND], [AC_CONFIG_FILES([egl/platforms/common/wayland-egl.pc])])
