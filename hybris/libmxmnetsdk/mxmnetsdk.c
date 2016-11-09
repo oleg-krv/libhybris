@@ -341,7 +341,7 @@ HYBRIS_IMPLEMENT_FUNCTION5(mxmnetsdk_so, bool,    H264_DVR_SerialRead, long, SER
 
 //获取DDNS信息，具体用法见ClientDemo
 //H264_DVR_API int CALL_METHOD H264_DVR_GetDDNSInfo(SearchMode &searchmode, DDNS_INFO *pDevicInfo, int maxDeviceNum, int &nretNum);
-HYBRIS_IMPLEMENT_FUNCTION4(mxmnetsdk_so, int,    H264_DVR_GetDDNSInfo, SearchMode &, DDNS_INFO *, int, int &);
+HYBRIS_IMPLEMENT_FUNCTION4(mxmnetsdk_so, int,    H264_DVR_GetDDNSInfo, SearchMode, DDNS_INFO *, int, int);
 
 //nStream: 0表示主码流，为1表示子码流
 //H264_DVR_API bool CALL_METHOD H264_DVR_MakeKeyFrame(long lLoginID, int nChannel, int nStream);
