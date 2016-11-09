@@ -481,16 +481,16 @@ HYBRIS_IMPLEMENT_FUNCTION1(mxmnetsdk_so, long,    H264_DVR_StopUpgrade_Cloud, lo
 HYBRIS_IMPLEMENT_FUNCTION2(mxmnetsdk_so, bool,    H264_DVR_Get_OutNet_IP, const char*, char*);
 
 #ifndef WIN32
-
+/*
 typedef void (*IDownProcess)(int nProcess,int userData);
 typedef void (*IDownData)(unsigned char* data, unsigned int length, int nUserData);
 
 H264_DVR_API int  CALL_METHOD H264_DVR_SetServerAddr(const char *ip, int port);
-////start********手机用**********/
+// //start********手机用**********
 H264_DVR_API int  CALL_METHOD H264_DVR_GetUpgradeFileList(const char *id, char *VersionList,int &num);
 H264_DVR_API int CALL_METHOD H264_DVR_StartDownload(const char* strSaveFilePath, const char *id, const char *date,const char *name,unsigned int length,IDownProcess ProgressCallback,IDownData DataCallback,int userData);
 H264_DVR_API int CALL_METHOD H264_DVR_CancelDownload();
-////**************end/
+// //**************end
 
 H264_DVR_API bool CALL_METHOD H264_DVR_ControlFBExtraState(long lLoginID, bool bOn, int waittime);
 //获取服务器ip(测试用)
@@ -538,4 +538,5 @@ H264_DVR_API int CALL_METHOD H264_DVR_StartWifiConfig(SDK_SWifiInfo *pInfo, PFun
 H264_DVR_API void CALL_METHOD H264_DVR_StopWifiConfig();
 H264_DVR_API int CALL_METHOD H264_DVR_SetAuthUserInfo(const char *userName, const char *password);
 H264_DVR_API long CALL_METHOD H264_DVR_CmdGeneral(long lLoginID, int nCmdReq, const char *szCmd, void *lpOutBuffer, unsigned long dwOutBufferSize, unsigned long* lpBytesReturned, int nTimeout, char *pInParam DEF_PARAM(0), int nInParamLen DEF_PARAM(0), int nCmdRes DEF_PARAM(-1));
+*/
 #endif
